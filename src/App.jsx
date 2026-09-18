@@ -22,10 +22,17 @@ const c = {
 const projects = [
   {
     title: "Vsper",
-    description: "Lorem Ipsum Dolor Sit Amet...",
+    description: "An AI-powered chat assistant app, deployed on Vercel.",
     tech: ['React', 'Tailwind CSS', 'Node', 'Express.js'],
     link: "https://vsper.vercel.app/",
     repo: "https://github.com/Neha-Bhat/ai-chat-app"
+  },
+  {
+    title: "Netflix-GPT",
+    description: "A Netflix clone with GPT-powered search, deployed on Firebase.",
+    tech: ['React', 'Tailwind CSS', 'Node', 'Express.js'],
+    link: "https://netflixgpt-9bb10.firebaseapp.com/",
+    repo: "https://github.com/Neha-Bhat/netflix-gpt"
   }
 ];
 
@@ -175,6 +182,7 @@ const WINDOW_CONTENT = {
       </div>
     ) : (
       <div className="grid grid-cols-1 gap-3">
+        <p className="font-semibold mb-1">Work in progress...</p>
         {projects.map((p) => (
           <div key={p.title} style={{ border: "1px solid #C6C3B5", background: "white" }} className="p-3 rounded-sm">
             <div style={{ color: c.text }} className="text-sm font-semibold">{p.title}</div>
